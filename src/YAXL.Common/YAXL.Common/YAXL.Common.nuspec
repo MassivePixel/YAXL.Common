@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>YAXL.Common</id>
+    <version>0.1.0-alpha</version>
+    <title>YAXL - Common</title>
+    <authors>Toni Petrina</authors>
+    <owners>Massive Pixel d.o.o.</owners>
+    <description>Yet Another Xamarin Library contains common code for most Xamarin projects.</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright Massive Pixel d.o.o. 2016</copyright>
+    <tags>xamarin</tags>
+  </metadata>
+</package>
