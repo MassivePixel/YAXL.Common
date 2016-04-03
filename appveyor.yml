@@ -1,0 +1,31 @@
+branches:
+  only:
+    - master
+
+version: 0.1.{build}-ci
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
+
+os: Visual Studio 2015
+install:
+  - set PATH=C:\Program Files (x86)\MSBuild\14.0\Bin;%PATH%
+
+before_build:
+  nuget restore "src/YAXL.Common/YAXL.Common.sln"
+
+configuration: AppVeyor
+platform: Any CPU
+
+build:
+  parallel: true
+  project: src/YAXL.Common/YAXL.Common/YAXL.Common.csproj
+  verbosity: minimal
+  
+after_build:
+  - ps: nuget pack src/YAXL.Common/YAXL.Common/YAXL.Common.csproj -Version $env:APPVEYOR_BUILD_VERSION
+artifacts:
+  - path: '**\YAWL.Composition.*.nupkg'
