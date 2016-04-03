@@ -17,7 +17,7 @@ install:
 before_build:
   nuget restore "src/YAXL.Common/YAXL.Common.sln"
 
-configuration: AppVeyor
+configuration: Release
 platform: Any CPU
 
 build:
