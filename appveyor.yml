@@ -28,4 +28,4 @@ build:
 after_build:
   - ps: nuget pack src/YAXL.Common/YAXL.Common/YAXL.Common.csproj -Version $env:APPVEYOR_BUILD_VERSION
 artifacts:
-  - path: '**\YAWL.Composition.*.nupkg'
+  - path: '**\YAXL.Common.*.nupkg'
