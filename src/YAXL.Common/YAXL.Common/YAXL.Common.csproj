@@ -33,6 +33,7 @@
     <Compile Include="Mvvm\DependentProperty.cs" />
     <Compile Include="Mvvm\DependentRelayCommand.cs" />
     <Compile Include="Mvvm\IDependentAction.cs" />
+    <Compile Include="Mvvm\SimpleIocHelpers.cs" />
     <Compile Include="Mvvm\ViewModelBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
