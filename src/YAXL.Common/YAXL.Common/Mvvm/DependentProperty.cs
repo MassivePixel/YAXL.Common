@@ -11,6 +11,6 @@
             DependentPropertyName = dependentPropertyName;
         }
 
-        public void Update() => Owner.RaisePropertyChanged(DependentPropertyName);
+        public void Update() => Owner.InternalRaisePropertyChanged(DependentPropertyName);
     }
 }
