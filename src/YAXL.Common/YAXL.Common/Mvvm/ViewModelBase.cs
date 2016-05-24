@@ -123,7 +123,7 @@ namespace YAXL.Common.Mvvm
 
         #endregion
 
-        protected override void RaisePropertyChanged([CallerMemberName] string propertyName = null)
+        public override void RaisePropertyChanged([CallerMemberName] string propertyName = null)
         {
             base.RaisePropertyChanged(propertyName);
 
@@ -134,8 +134,5 @@ namespace YAXL.Common.Mvvm
                     action.Update();
             }
         }
-
-        internal void InternalRaisePropertyChanged(string propertyName)
-            => RaisePropertyChanged(propertyName);
     }
 }
