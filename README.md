@@ -17,4 +17,4 @@ This is an open source project and we accept contributes. Please be mindful abou
 
 ## License
 
-YAXL.Redux is distributed under MIT licence
+YAXL.Common is distributed under MIT licence
